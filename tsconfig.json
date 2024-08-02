@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "lib": [
+            "esnext",
+            "DOM",
+            "DOM.Iterable",
+        ],
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "declaration": true,
+        /* Bundler mode */
+        "moduleResolution": "bundler",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        /* Linting */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "allowJs": true,
+        "removeComments": true,
+        "outDir": "dist",
+    },
+    "include": [
+        "index.ts",
+        "global.d.ts"
+    ],
+    "exclude": [
+        "dist"
+    ]
+}

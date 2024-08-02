@@ -4,7 +4,7 @@ A minimalist javascript audio player for PCM streaming data for the browsers.
 
 **How to use?**
 
-    var player = new PCMPlayer(option);
+    const player = new PCMPlayer(option);
 
 Available options are:
 
@@ -38,19 +38,6 @@ Decoder fire an event *decode* whenever it completes decoding. Usually it decode
 | volume      | decimal value 0 to 1      |  For controlling volume of the player  |
 | destroy | -      |    Destroy the player instance and release the resources |
   
- **Compatibility**
- 
-   it is supported on:
-
- * Chrome for Android 34+
- * Chrome for Desktop 34+
- * Firefox for Android 41+
- * Firefox for Desktop 42+
- * IE11+ for Windows 8.1+
- * Edge for Windows 10+
- * Opera for Desktop
- * Safari for Mac 8+
- * Safari for iOS 8+
 
 **How to run example?**
 
@@ -61,17 +48,9 @@ An example with simple node server script is available that include some raw pcm
 
 *node server.js*
 
-then, visit *example/index.html* page through any webserver.
-
-If you don't have any web server, you can do following:
-
-(I am assuming you are on project directory i.e pcm-player)
-
-*npm install http-server -g*
-
 then run following command
 
-*http-server*
+*npx serve*
 
-Finally visit example page using URL  http://192.168.0.105:8081/example/index.html OR URL suggested by http-server
+Finally visit example page using URL  http://localhost:3000/example OR URL suggested by serve
 
