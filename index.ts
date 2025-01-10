@@ -5,11 +5,15 @@ type Options = {
 	flushingTime: number;
 };
 
-type TypedArray = Int8Array | Int16Array | Int32Array | Float32Array;
+type TypedArray =
+	| Int8Array<ArrayBuffer>
+	| Int16Array<ArrayBuffer>
+	| Int32Array<ArrayBuffer>
+	| Float32Array<ArrayBuffer>;
 
 export default class PCMPlayer {
 	#option: Options;
-	#samples: Float32Array;
+	#samples: Float32Array<ArrayBuffer>;
 	#interval: NodeJS.Timeout;
 	#maxValue: number;
 	#typedArray:
@@ -56,7 +60,7 @@ export default class PCMPlayer {
 			"16bitInt": 32768,
 			"32bitInt": 2147483648,
 			"32bitFloat": 1,
-		};
+		} as const;
 
 		return encodings[this.#option.encoding]
 			? encodings[this.#option.encoding]

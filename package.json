@@ -26,10 +26,10 @@
 	},
 	"author": "Samir Das",
 	"devDependencies": {
-		"@biomejs/biome": "^1.8.3",
-		"@types/node": "^22.0.2",
-		"@types/ws": "^8.5.12",
-		"typescript": "^5.5.4",
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.10.5",
+		"@types/ws": "^8.5.13",
+		"typescript": "^5.7.3",
 		"uglify-js": "^3.3.23",
 		"ws": "^8.18.0"
 	}
